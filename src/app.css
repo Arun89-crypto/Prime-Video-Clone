@@ -1,0 +1,362 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
+}
+.active {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f171e;
+  color: #8197a4;
+  padding: 12px 32px;
+  height: 55px;
+  position: sticky;
+  z-index: 15;
+  top: 0px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-list-item {
+  margin: 10px;
+  font-size: 15px;
+}
+.navLeft img {
+  height: 40px;
+}
+.navCent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 0px 30px;
+}
+.searchLogo {
+  width: 25px;
+  fill: #8197a4;
+}
+.navright {
+  display: flex;
+  align-items: center;
+}
+.navright img {
+  width: 32px;
+  margin-right: 7px;
+}
+
+/* header  */
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.header button {
+  height: 98%;
+  position: absolute;
+  top: 0px;
+  border: none;
+  width: 5%;
+  background: none;
+  cursor: pointer;
+}
+.header button:focus {
+  outline: none;
+}
+.imageCase {
+  width: 100%;
+}
+.imageCase img {
+  width: 100%;
+}
+#leftslide {
+  left: 0px;
+}
+#leftslide:hover {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.7),
+    rgba(17, 17, 17, 0)
+  );
+}
+#rightslide {
+  right: 0px;
+}
+#rightslide:hover {
+  background: -webkit-linear-gradient(
+    right,
+    rgba(0, 0, 0, 0.7),
+    rgba(17, 17, 17, 0)
+  );
+}
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.indic-marks {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  height: 12px;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 40%);
+  width: 12px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+/* maindiv  */
+.main {
+  background-color: #0f171e;
+  color: white;
+  margin-top: -10px;
+}
+.sectionHead {
+  font-size: 19px;
+  line-height: 24px;
+}
+.watch-next,
+.recommended {
+  width: 96%;
+  padding: 2%;
+}
+.card img {
+  width: 100%;
+}
+.items-section {
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+  overflow-y: visible;
+}
+.lowerCard {
+  background: none;
+  background: linear-gradient(rgba(27, 37, 48, 0.46), #1b2530 48px);
+  margin-top: -48px;
+  z-index: 1;
+  height: 210px;
+  padding: 15px 20px;
+  display: none;
+}
+.whole-card {
+  margin-right: 5px;
+  min-width: 24%;
+  max-width: 24%;
+  color: white;
+  transition: transform 0.3s ease;
+  z-index: 5;
+}
+.upper-card {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: space-between;
+}
+.upper-card div {
+  display: flex;
+  align-items: center;
+}
+.upper-card h3 {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.upper-card svg {
+  width: 40px;
+}
+.upper-card div img {
+  height: 20px;
+  filter: invert(1);
+}
+.inner-card {
+  padding: 10px;
+}
+.inner-card h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.inner-card p {
+  font-size: 13px;
+  height: 50px;
+  overflow: hidden;
+}
+.lower-card {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+  font-size: 14px;
+}
+.rating {
+  border: 1px solid white;
+  padding: 2px;
+}
+.whole-card:hover {
+  transform: scale(1.05);
+  z-index: 6;
+  box-shadow: 0 0 9px rgb(0 0 0 / 70%);
+}
+.whole-card:hover .lowerCard {
+  display: block;
+}
+.photo {
+  min-width: 150px;
+  min-height: 150px;
+  margin: 6px;
+  position: relative;
+}
+.photo img {
+  border-radius: 7px;
+  width: 100%;
+}
+.photo p {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+}
+.mask {
+  background: url(https://m.media-amazon.com/images/G/01/digital/video/storefronts/genre-image-fade._V1_.png)
+    0 100% repeat-x;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+.bo {
+  overflow: scroll;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.footer img {
+  width: 120px;
+}
+.links-footer {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.footer-links-item {
+  padding: 5px;
+  font-size: 15px;
+  color: #79b8f3;
+}
+.dim {
+  color: #8197a4;
+}
+
+.left-cont {
+  background-image: linear-gradient(
+      270deg,
+      rgba(37, 46, 57, 0),
+      rgb(37, 46, 57) 80%
+    ),
+    url("https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/dfb788acd0dcbd94cdfd66b3553ae94fc1dcbede3fe2d63f7dc6d26b3197a118._RI_V_TTW_SX1500_BL40_FMJPG_.jpg");
+  background-size: cover;
+}
+.preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  position: relative;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+}
+.left-cont {
+  height: 90.5%;
+  width: 40%;
+  border-radius: 20px 0px 0px 20px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.previewBtns {
+  display: flex;
+  align-items: center;
+}
+.previewBtns button {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: none;
+  background-color: #0f79af;
+  color: white;
+}
+.circle svg {
+  padding: 10px;
+  margin: 5px;
+  margin-left: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.right-cont {
+  background: black;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  width: 60%;
+}
+.right-cont video {
+  width: 100%;
+}
+.rating {
+  width: fit-content;
+}
+.rating-genre {
+  padding-left: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.rating-genre p {
+  margin-top: 5px;
+}
+.preview-heading {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.preview-heading p {
+  color: #8197a4;
+  font-size: 13px;
+}
+.preview-heading h2 {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
